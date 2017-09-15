@@ -14,3 +14,34 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.button{
+	background-color:#666d7b;
+    color: #fff;
+    font-weight: 700;
+}  
+ion-content{
+	background-color:rgba(230, 231, 234, 0.74) !important
+}
+.no-padding{
+	padding:0!important;
+}
+.no-padding img{
+	margin:0!important;
+}
+.tabs .tabbar{
+	background: #666d7b;
+}
+.tabs .tab-button[aria-selected=true]{
+	color: #fff;
+	border-bottom-color: #e30515;
+}
+
+.tabs .tab-button .tab-button-icon,.tabs .tab-button[aria-selected=true] .tab-button-icon {
+	color:#fff;
+	
+}
+.tabs .tab-button-text{
+	
+	font-size: 1.1em;
+	color:#fff;
+}

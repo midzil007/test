@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
+ 
+<ion-content>
+<ion-card> 
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+  <ion-card-content>
+  <h1>To je namo apka</h1>
+    Vítame vás v naší applikaci, bla bla bla
+  </ion-card-content>
+
+</ion-card>
+<ion-list> 
+  <ion-item>
+    <ion-label floating>Zadejte Email</ion-label>
+    <ion-input type="text" [(ngModel)]="email"></ion-input>
+  </ion-item>
+ 
+</ion-list>
+ <button ion-button full (click)="singIn()">OK</button>
+ </ion-content>
