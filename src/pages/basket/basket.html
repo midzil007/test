@@ -5,19 +5,19 @@
 </ion-header>
 
 
-<ion-content padding>  
-<div padding *ngIf="total > 0">
+<ion-content>  
+<div *ngIf="total > 0">
       Máte {{countItems}} položek za {{total}} Kč
     </div> 
 
 <ion-grid>
   <ion-row *ngFor="let row of listProducts">
-    <ion-col width-50 *ngFor="let item of row">
-      <ion-card>
-        <ion-card-header>
+    <ion-col class="item-basket" *ngFor="let item of row">
+      <ion-card class="card-md">
+        <ion-card-header class="ion-card-header">
         {{item.title}}
         </ion-card-header>
-        <ion-card-content>   
+        <ion-card-content>     
           <img src="{{item.image}}">
           <p float-left text-right margin-top>{{item.price}} Kč</p> 
            <div float-right>

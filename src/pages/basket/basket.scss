@@ -5,12 +5,22 @@ page-basket {
     display: flex;
     flex-flow: row wrap;
   }
-  .item {
-    width: 50%;
-  }
+  .item-basket, .col{
+    width: 50%; 
+    padding: 0;
+  }  
   .other{
   	background-color: #ce000c;
   	color: white;
   	padding: 10px 5px 10px 15px;
-  	font-size: 1.5em;
+  	font-size: 1.5em;  
+  }
+  .ion-card-header-basket{
+    height:118px;  
+    overflow:visible; 
+    white-space: normal;
+  }
+  .card-md{
+    margin: 5px;
+    width: calc(100% - 10px);
   }
