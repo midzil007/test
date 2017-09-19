@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Mé údaje
+    </ion-title>
+
+    <ion-buttons>
+      <button ion-button clear large navPop>
+        <ion-icon name="arrow-round-back"></ion-icon> Zpět
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+<ion-card>  
+<ion-card-content>
+<form [formGroup]="formValidatorUser">
+<ion-list>
+  <ion-item> 
+    <ion-label floating>Jméno a příjmení* </ion-label>    
+    <ion-input formControlName="fu_jmeno" [(ngModel)]="fu_jmeno" type="text" ></ion-input>
+  </ion-item> 
+     <ion-item *ngIf="!formValidatorUser.controls.fu_jmeno.valid  && (formValidatorUser.controls.fu_jmeno.dirty || saveCustomer)">
+                <p>Prosím vložte Jméno a příjmení</p>
+            </ion-item>      
+  <ion-item>
+    <ion-label floating>Email*</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+ 
+</ion-list>
+ <button ion-button full (click)="saveCustomer()">ULOŽIT</button> 
+</form>
+ </ion-card-content>
+</ion-card>
+</ion-content>
